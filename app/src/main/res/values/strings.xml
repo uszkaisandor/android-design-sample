@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android Design</string>
+    <string name="splash_screen_background_image">Splash screen background image</string>
+    <string name="coffee_dev">Coffee Dev</string>
 </resources>
