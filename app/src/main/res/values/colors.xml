@@ -7,5 +7,7 @@
     <color name="colorBackgroundBlur">#29332F</color>
     <color name="colorTitleShadow">#DDC8C8</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorButtonCreateAccount">#95989A</color>
+    <color name="colorButtonCreateAccount">#4895989A</color>
+    <color name="colorButtonCreateAccountPushed">#3295989A</color>
+
 </resources>
