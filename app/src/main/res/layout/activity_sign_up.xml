@@ -26,18 +26,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ImageView
+    <TextView
             android:id="@+id/tvAppTitleSignUp"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_logo"
+            android:text="@string/coffee_dev"
+            android:fontFamily="@font/signpainter_housescript"
+            android:textColor="@color/colorPrimary"
+            android:textSize="56sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.648"
-            app:layout_constraintHorizontal_bias="0.7186"
-            app:layout_constraintVertical_bias="0.1134"
+            app:layout_constraintVertical_bias="0.1434"
     />
 
     <EditText
@@ -45,6 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/your_name"
+            android:textSize="16sp"
             android:fontFamily="@font/rockwell"
             android:backgroundTint="@color/colorPrimary"
             android:inputType="text"
@@ -63,10 +65,11 @@
             android:hint="@string/email"
             android:fontFamily="@font/rockwell"
             android:layout_marginTop="38dp"
+            android:textSize="16sp"
             android:backgroundTint="@color/colorPrimary"
             android:inputType="textEmailAddress"
             app:layout_constraintWidth_percent="0.68"
-            app:layout_constraintVertical_bias="0.0434"
+            app:layout_constraintVertical_bias="0.0438"
             app:layout_constraintTop_toTopOf="@id/etYourName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,11 +82,12 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:fontFamily="@font/rockwell"
-            android:layout_marginTop="38dp"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
             android:backgroundTint="@color/colorPrimary"
             android:inputType="textPassword"
             app:layout_constraintWidth_percent="0.68"
-            app:layout_constraintVertical_bias="0.0434"
+            app:layout_constraintVertical_bias="0.0438"
             app:layout_constraintTop_toTopOf="@id/etEmail"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/create_my_account"
+                android:textSize="18sp"
                 android:fontFamily="@font/lucida_console"
                 android:layout_gravity="center"/>
 
@@ -122,7 +127,7 @@
             android:fontFamily="@font/rockwell"
             android:textSize="14sp"
             android:paddingTop="20dp"
-            android:paddingBottom="24dp"
+            android:paddingBottom="25dp"
             android:textColor="@color/colorPrimary"
             app:layout_constraintTop_toBottomOf="@id/btnCreateMyAccount"
             app:layout_constraintStart_toStartOf="parent"
@@ -177,6 +182,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.0719"
             android:text="@string/i_m_already_a_dev"
+            android:textSize="18sp"
             android:background="@drawable/selector_button_im_already_dev"/>
 
 

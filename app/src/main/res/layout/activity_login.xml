@@ -39,18 +39,19 @@
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintVertical_bias="0.0375"/>
 
-    <ImageView
+    <TextView
             android:id="@+id/tvAppTitleLogin"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_logo"
+            android:text="@string/coffee_dev"
+            android:fontFamily="@font/signpainter_housescript"
+            android:textColor="@color/colorPrimary"
+            android:textSize="56sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.648"
-            app:layout_constraintHorizontal_bias="0.7186"
-            app:layout_constraintVertical_bias="0.1134"
+            app:layout_constraintVertical_bias="0.1434"
     />
 
     <EditText
@@ -63,7 +64,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:inputType="textEmailAddress"
             app:layout_constraintWidth_percent="0.68"
-            app:layout_constraintVertical_bias="0.365"
+            app:layout_constraintVertical_bias="0.368"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +93,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/selector_button_create_acc"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="42dp"
             android:clickable="true"
             android:focusable="true"
             app:layout_constraintStart_toStartOf="parent"
@@ -106,6 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/log_in"
+                android:textSize="16sp"
                 android:fontFamily="@font/lucida_console"
                 android:layout_gravity="center"/>
 
