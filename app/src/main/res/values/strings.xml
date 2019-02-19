@@ -6,6 +6,6 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="i_m_already_a_dev">I\'M ALREADY A DEV</string>
-    <string name="create_my_account">Create my account</string>
+    <string name="create_my_account">CREATE MY ACCOUNT</string>
     <string name="or_login_with">or login with</string>
 </resources>
