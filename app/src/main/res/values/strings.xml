@@ -2,4 +2,10 @@
     <string name="app_name">Android Design</string>
     <string name="splash_screen_background_image">Splash screen background image</string>
     <string name="coffee_dev">Coffee Dev</string>
+    <string name="your_name">Your Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="i_m_already_a_dev">I\'M ALREADY A DEV</string>
+    <string name="create_my_account">Create my account</string>
+    <string name="or_login_with">or login with</string>
 </resources>

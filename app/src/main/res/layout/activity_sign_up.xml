@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/ivBackgroundSignUp"
+            android:layout_width="413dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/tvAppTitleSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAppTitle"
+            android:textSize="50sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.648"
+            app:layout_constraintHorizontal_bias="0.7186"
+            app:layout_constraintVertical_bias="0.1034"
+            tools:text="@string/coffee_dev"/>
+
+    <EditText
+            android:id="@+id/etYourName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"
+            android:backgroundTint="@color/colorAppTitle"
+            app:layout_constraintWidth_percent="0.68"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:backgroundTint="@color/colorAppTitle"
+            app:layout_constraintWidth_percent="0.68"
+            app:layout_constraintVertical_bias="0.0434"
+            app:layout_constraintTop_toTopOf="@id/etYourName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:backgroundTint="@color/colorAppTitle"
+            app:layout_constraintWidth_percent="0.68"
+            app:layout_constraintVertical_bias="0.0434"
+            app:layout_constraintTop_toTopOf="@id/etEmail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <Button
+            android:id="@+id/btnCreateMyAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/create_my_account"
+            android:background="@color/colorButtonCreateAccount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.68"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"/>
+
+    <TextView
+            android:id="@+id/tvOrLoginWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_login_with"
+            android:textSize="14sp"
+            android:textColor="@color/colorAppTitle"
+            app:layout_constraintTop_toBottomOf="@id/btnCreateMyAccount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintTop_toBottomOf="@id/tvOrLoginWith"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivTwitter"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <ImageView
+            android:id="@+id/ivTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_twitter"
+            app:layout_constraintTop_toTopOf="@id/ivFacebook"
+            app:layout_constraintStart_toEndOf="@+id/ivFacebook"
+            app:layout_constraintEnd_toStartOf="@id/ivGooglePlus"
+    />
+
+    <ImageView
+            android:id="@+id/ivGooglePlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google_plus"
+            app:layout_constraintTop_toTopOf="@id/ivFacebook"
+            app:layout_constraintStart_toEndOf="@+id/ivTwitter"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/btnImAlreadyADev"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.0719"
+            android:text="@string/i_m_already_a_dev"
+            android:background="@color/colorAppTitle"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
