@@ -14,18 +14,19 @@ class LoginActivity : AppCompatActivity() {
         window.decorView.apply {
             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
         }
+        setUpListeners()
     }
     private fun setUpListeners() {
         btnLogIn.setOnClickListener {
-            startLoginActivity()
+            startProfileActivity()
         }
-        btnImAlreadyADev.setOnClickListener{
-            startLoginActivity()
+        ivBtnBack.setOnClickListener{
+            finish()
         }
     }
 
-    private fun startLoginActivity() {
-        val intent = Intent(this, LoginActivity::class.java)
+    private fun startProfileActivity() {
+        val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
     }
 }
