@@ -8,4 +8,6 @@
     <string name="i_m_already_a_dev">I\'M ALREADY A DEV</string>
     <string name="create_my_account">CREATE MY ACCOUNT</string>
     <string name="or_login_with">or login with</string>
+    <string name="log_in">LOG IN</string>
+    <string name="lost_password">Lost Password?</string>
 </resources>
