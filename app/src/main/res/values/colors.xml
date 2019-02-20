@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#AA7A33</color>
-    <color name="colorPrimaryDark">#CDAA7A33</color>
+    <color name="colorPrimaryDark">#E629332F</color>
+    <color name="colorYellowButtonPushed">#AAAA7A33</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBackgroundBlur">#29332F</color>
     <color name="colorTitleShadow">#DDC8C8</color>
@@ -9,7 +10,6 @@
     <color name="colorButtonCreateAccount">#4895989A</color>
     <color name="colorButtonCreateAccountPushed">#3295989A</color>
     <color name="colorBackgroundSmoke">#E629332F</color>
-
-    <color name="black_overlay">#66000000</color>
+    <color name="colorBottomNavBar">#1C211F</color>
 
 </resources>

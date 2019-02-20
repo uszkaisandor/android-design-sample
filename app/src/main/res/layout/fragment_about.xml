@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorBackgroundSmoke">
+
+    <Button
+            android:id="@+id/btnHire"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/hire"
+            android:fontFamily="@font/lucida_console"
+            android:textSize="16sp"
+            android:background="@drawable/selector_button_im_already_dev"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollViewAbout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/btnHire"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp">
+
+            <ImageView
+                    android:id="@+id/ivVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.5625"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/image_video"/>
+
+            <TextView
+                    android:id="@+id/tvBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/background"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="22sp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivVideo"/>
+
+            <TextView
+                    android:id="@+id/loremIpsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/this_is_where_you_will_enter_your_background_story_info_how_you_got_into_this_why_you_like_it_make_people_like_you_by_sharing_your_personal_story"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintTop_toBottomOf="@id/tvBackground"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                    android:id="@+id/viewHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/loremIpsum"
+                    android:background="@color/colorPrimary"/>
+
+            <TextView
+                    android:id="@+id/tvSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skills"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="20sp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/viewHorizontal"/>
+
+            <TextView
+                    android:id="@+id/tvBulletList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSkills"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorWhite"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    tools:text="@string/coffee_dev"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

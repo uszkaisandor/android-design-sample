@@ -3,6 +3,7 @@ package com.hu.sandoruszkai.androiddesign
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_profile.*
 
 class ProfileActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,11 +11,14 @@ class ProfileActivity : AppCompatActivity(){
         setContentView(R.layout.activity_profile)
         window.decorView.apply {
             systemUiVisibility = View.SYSTEM_UI_FLAG_LOW_PROFILE or
-                    View.SYSTEM_UI_FLAG_FULLSCREEN or
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
                     View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or
                     View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
                     View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+        }
+        viewPager?.let {
+            val adapter = ViewPagerAdapter(supportFragmentManager, this)
+            viewPager.adapter = adapter
         }
     }
 }

@@ -13,9 +13,22 @@
     <string name="forrest_knight">Forrest Knight</string>
     <string name="ios_developer">iOS Developer</string>
     <string name="virginia_beach_va">Virginia Beach, VA</string>
-    <string name="avatar">Avatar</string>
-
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="add">Add</string>
+    <string name="hearth">hearth</string>
+    <string name="profile">profile</string>
+    <string name="avatar">avatar</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="about">About</string>
+    <string name="hire">Hire</string>
+    <string name="background">Background</string>
+    <string name="this_is_where_you_will_enter_your_background_story_info_how_you_got_into_this_why_you_like_it_make_people_like_you_by_sharing_your_personal_story">
+        This is where you will enter your background story/info. How you got into this, why you like it; make people
+        like you by sharing your personal story.
+    </string>
+    <string name="skills">Skills</string>
 </resources>
