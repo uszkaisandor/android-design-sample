@@ -43,7 +43,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:src="@drawable/image_video"/>
+                    android:src="@drawable/image_video"
+                    android:contentDescription="@string/preview_of_a_video"/>
 
             <TextView
                     android:id="@+id/tvBackground"

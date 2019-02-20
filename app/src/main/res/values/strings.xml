@@ -31,4 +31,11 @@
         like you by sharing your personal story.
     </string>
     <string name="skills">Skills</string>
+    <string name="background_image">background image</string>
+    <string name="preview_of_a_video">preview of a video</string>
+    <string name="_HIRE">HIRE</string>
+    <string name="connecting_you_with_hand_selected_software_developers">Connecting you with hand selected software
+        developers.
+    </string>
+    <string name="get">GET</string>
 </resources>
