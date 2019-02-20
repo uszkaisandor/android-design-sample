@@ -10,4 +10,6 @@
     <color name="colorButtonCreateAccountPushed">#3295989A</color>
     <color name="colorBackgroundSmoke">#E629332F</color>
 
+    <color name="black_overlay">#66000000</color>
+
 </resources>

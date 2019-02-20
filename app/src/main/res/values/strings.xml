@@ -10,4 +10,12 @@
     <string name="or_login_with">or login with</string>
     <string name="log_in">LOG IN</string>
     <string name="lost_password">Lost Password?</string>
+    <string name="forrest_knight">Forrest Knight</string>
+    <string name="ios_developer">iOS Developer</string>
+    <string name="virginia_beach_va">Virginia Beach, VA</string>
+    <string name="avatar">Avatar</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
