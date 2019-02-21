@@ -4,7 +4,7 @@
             android:radius="3dp"
     />
     <solid
-            android:color="@color/colorBackgroundBlur"
+            android:color="@color/colorBottomNavBar"
     />
     <padding
             android:left="6dp"

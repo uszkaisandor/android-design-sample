@@ -38,4 +38,6 @@
         developers.
     </string>
     <string name="get">GET</string>
+    <string name="_search">Search</string>
+    <string name="featured_developer">Featured Developer</string>
 </resources>

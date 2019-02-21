@@ -1,24 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
             android:background="@color/colorBackgroundSmoke"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="15dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp">
+            android:layout_height="match_parent"
+    >
 
         <androidx.appcompat.widget.Toolbar
+                android:paddingEnd="15dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="6dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+        >
 
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:background="@drawable/search_view_background"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_search_small"
+
+                            android:layout_marginEnd="3dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/lucida_console"
+                            android:textColor="@color/colorWhite"
+                            android:layout_gravity="center"
+                            android:text="@string/_search"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
         </androidx.appcompat.widget.Toolbar>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBottomNavBar"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="9dp"
+        >
+
+            <TextView
+                    android:id="@+id/tvFeaturedDev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/featured_developer"
+                    android:fontFamily="@font/lucida_console"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:paddingTop="8dp"
+                    android:paddingStart="3dp"
+                    android:paddingBottom="6dp"
+            />
+
+            <ImageView
+                    android:id="@+id/ivAvatarSmall"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvFeaturedDev"
+                    android:src="@drawable/ic_photographer_frameless"
+            />
+
+            <TextView
+                    android:id="@+id/ivName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forrest_knight"
+                    app:layout_constraintStart_toEndOf="@+id/ivAvatarSmall"
+                    app:layout_constraintTop_toTopOf="@+id/ivAvatarSmall"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/font_signpainter_housescript_italic"
+                   />
+
+            <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:text="@string/ios_developer"
+                    android:fontFamily="@font/rockwell"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="@id/ivName"
+                    app:layout_constraintTop_toBottomOf="@id/ivName"
+                    android:layout_marginTop="4dp"
+            />
+
+
+            <FrameLayout
+                    android:id="@+id/btnFrameHire3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/selector_button_hire_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintWidth_percent="0.17"
+                    app:layout_constraintTop_toTopOf="@+id/ivName"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivAvatarSmall"
+            >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/lucida_console"
+                        android:textSize="19sp"
+                        android:layout_gravity="center"
+                        android:text="@string/_HIRE"/>
+            </FrameLayout>
+
+            <ImageView
+                    android:id="@+id/ivScreen1"
+                    android:layout_width="110dp"
+                    android:layout_height="196dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivScreen2"
+                    app:layout_constraintTop_toBottomOf="@+id/ivAvatarSmall"
+                    android:src="@drawable/image_screen_1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    android:layout_marginTop="13dp"/>
+
+            <ImageView
+                    android:id="@+id/ivScreen2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toEndOf="@+id/ivScreen1"
+                    app:layout_constraintTop_toTopOf="@id/ivScreen1"
+                    android:src="@drawable/image_screen_2"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:layout_constraintEnd_toStartOf="@+id/ivScreen3"
+                    app:layout_constraintBottom_toBottomOf="@id/ivScreen1"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+            <ImageView
+                    android:id="@+id/ivScreen3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toEndOf="@+id/ivScreen2"
+                    app:layout_constraintTop_toTopOf="@id/ivScreen2"
+                    app:layout_constraintBottom_toBottomOf="@id/ivScreen2"
+                    app:layout_constraintWidth_percent="0.3"
+                    android:src="@drawable/image_screen_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/colorBackgroundSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
     </com.google.android.material.appbar.AppBarLayout>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
