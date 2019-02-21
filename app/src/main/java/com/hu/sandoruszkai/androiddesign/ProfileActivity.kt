@@ -1,11 +1,13 @@
 package com.hu.sandoruszkai.androiddesign
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_profile.*
 
-class ProfileActivity : AppCompatActivity(){
+
+class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
@@ -20,5 +22,15 @@ class ProfileActivity : AppCompatActivity(){
             val adapter = ViewPagerAdapter(supportFragmentManager, this)
             viewPager.adapter = adapter
         }
+        navbarBottom.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.action_search -> {
+                }
+                else -> {
+                }
+            }
+            return@setOnNavigationItemSelectedListener true
+        }
     }
+
 }
