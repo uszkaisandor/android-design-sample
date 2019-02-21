@@ -40,4 +40,5 @@
     <string name="get">GET</string>
     <string name="_search">Search</string>
     <string name="featured_developer">Featured Developer</string>
+    <string name="error">Error with HTTP connection!</string>
 </resources>

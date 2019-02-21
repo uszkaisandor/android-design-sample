@@ -2,9 +2,7 @@ package com.hu.sandoruszkai.androiddesign.model
 
 import com.squareup.moshi.Json
 
-class ProfilePicture {
-    class ProfilePicture (
-        @Json(name = "large")
-        var picture: String?
-    )
-}
+class ProfilePicture(
+    @Json(name = "large")
+    var pictureUrl: String?
+)
