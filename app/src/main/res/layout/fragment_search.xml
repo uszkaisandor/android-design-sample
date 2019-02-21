@@ -149,8 +149,8 @@
 
             <ImageView
                     android:id="@+id/ivScreen2"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_width="110dp"
+                    android:layout_height="196dp"
                     app:layout_constraintStart_toEndOf="@+id/ivScreen1"
                     app:layout_constraintTop_toTopOf="@id/ivScreen1"
                     android:src="@drawable/image_screen_2"
@@ -161,8 +161,8 @@
 
             <ImageView
                     android:id="@+id/ivScreen3"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_width="110dp"
+                    android:layout_height="196dp"
                     app:layout_constraintStart_toEndOf="@+id/ivScreen2"
                     app:layout_constraintTop_toTopOf="@id/ivScreen2"
                     app:layout_constraintBottom_toBottomOf="@id/ivScreen2"
@@ -173,19 +173,12 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.core.widget.NestedScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewGrid"
                     android:background="@color/colorBackgroundSmoke"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:listitem="@layout/item_user"/>
-
-        </androidx.core.widget.NestedScrollView>
-
 
     </com.google.android.material.appbar.AppBarLayout>
 

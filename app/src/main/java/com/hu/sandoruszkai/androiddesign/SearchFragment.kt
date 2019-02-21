@@ -23,6 +23,7 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setRecyclerViewGridAdapter()
         getUsers()
+
     }
 
     private fun setRecyclerViewGridAdapter() {
