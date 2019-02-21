@@ -7,7 +7,7 @@
         android:background="@color/colorBackgroundSmoke">
 
     <Button
-            android:id="@+id/btnHire"
+            android:id="@+id/btnHire2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:text="@string/hire"
@@ -17,13 +17,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.15"/>
+            app:layout_constraintHeight_percent="0.082"/>
 
     <androidx.core.widget.NestedScrollView
-            android:id="@+id/scrollViewAbout"
+            android:id="@+id/scrollViewPortfolio"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/btnHire"
+            app:layout_constraintTop_toBottomOf="@id/btnHire2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -59,7 +59,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
-                    android:fontFamily="@font/rockwell"
+                    android:fontFamily="@font/rockwell_bold"
                     android:textColor="@color/colorWhite"
                     android:text="@string/connecting_you_with_hand_selected_software_developers"
                     app:layout_constraintEnd_toStartOf="@+id/btnFrameHire"
@@ -98,7 +98,7 @@
                     app:layout_constraintTop_toBottomOf="@id/ivIconCoffee"
                     android:src="@drawable/image_screen_1"
                     app:layout_constraintWidth_percent="0.3"
-                    app:layout_constraintHeight_percent="0.6"
+                    app:layout_constraintHeight_percent="0.57"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintHorizontal_chainStyle="spread_inside"/>
 
@@ -110,8 +110,8 @@
                     app:layout_constraintTop_toTopOf="@id/ivScreen1"
                     android:src="@drawable/image_screen_2"
                     app:layout_constraintWidth_percent="0.3"
-                    app:layout_constraintHeight_percent="0.6"
                     app:layout_constraintEnd_toStartOf="@+id/ivScreen3"
+                    app:layout_constraintBottom_toBottomOf="@id/ivScreen1"
                     app:layout_constraintHorizontal_bias="0.5"/>
 
             <ImageView
@@ -120,8 +120,8 @@
                     android:layout_height="0dp"
                     app:layout_constraintStart_toEndOf="@+id/ivScreen2"
                     app:layout_constraintTop_toTopOf="@id/ivScreen2"
+                    app:layout_constraintBottom_toBottomOf="@id/ivScreen2"
                     app:layout_constraintWidth_percent="0.3"
-                    app:layout_constraintHeight_percent="0.6"
                     android:src="@drawable/image_screen_3"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintEnd_toEndOf="parent"/>
@@ -163,7 +163,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
-                    android:fontFamily="@font/rockwell"
+                    android:fontFamily="@font/rockwell_bold"
                     android:textColor="@color/colorWhite"
                     android:text="@string/connecting_you_with_hand_selected_software_developers"
                     app:layout_constraintEnd_toStartOf="@+id/btnFrameHire2"
