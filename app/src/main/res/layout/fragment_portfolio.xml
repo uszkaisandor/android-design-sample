@@ -31,7 +31,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="17dp">
 
             <ImageView
                     android:id="@+id/ivIconCoffee"
@@ -52,7 +52,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/btnFrameHire"
                     app:layout_constraintTop_toTopOf="@+id/ivIconCoffee"
                     app:layout_constraintStart_toEndOf="@+id/ivIconCoffee"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
             <TextView
                     android:id="@+id/tvAppDetails"
@@ -65,7 +65,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/btnFrameHire"
                     app:layout_constraintTop_toBottomOf="@+id/tvAppName"
                     app:layout_constraintStart_toEndOf="@+id/ivIconCoffee"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
 
             <FrameLayout
@@ -93,6 +93,7 @@
                     android:id="@+id/ivScreen1"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ivScreen2"
                     app:layout_constraintTop_toBottomOf="@id/ivIconCoffee"
@@ -156,7 +157,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/btnFrameHire2"
                     app:layout_constraintTop_toTopOf="@+id/ivIconCoffee2"
                     app:layout_constraintStart_toEndOf="@+id/ivIconCoffee2"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
             <TextView
                     android:id="@+id/tvAppDetails2"
@@ -169,7 +170,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/btnFrameHire2"
                     app:layout_constraintTop_toBottomOf="@+id/tvAppName2"
                     app:layout_constraintStart_toEndOf="@+id/ivIconCoffee2"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
 
             <FrameLayout

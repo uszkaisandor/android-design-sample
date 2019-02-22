@@ -16,7 +16,4 @@ class AboutFragment : BaseFragment() {
         return R.string.about
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
 }

@@ -39,8 +39,7 @@ class UserAdapter(
 
     @SuppressLint("SetTextI18n")
     private fun setTexts(holder: UserHolder, user: User) {
-        holder.firstName?.text = "${user.name.first?.capitalize()} "
-        holder.lastName?.text = user.name.last?.capitalize()
+        holder.name?.text = "${user.name.first?.capitalize()} ${user.name.last?.capitalize()}"
         holder.gender?.text = user.gender
     }
 
@@ -51,8 +50,7 @@ class UserAdapter(
     }
 
     class UserHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var firstName: TextView? = itemView.tvItemFirstName
-        var lastName: TextView? = itemView.tvItemLastName
+        var name: TextView? = itemView.tvItemName
         var gender: TextView? = itemView.tvItemGender
         var profilePicture: ImageView = itemView.ivItemAvatar
     }

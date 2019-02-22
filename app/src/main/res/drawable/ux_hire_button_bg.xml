@@ -4,12 +4,12 @@
             android:radius="6dp"
     />
     <solid
-            android:color="@color/colorBackgroundSmoke"
+            android:color="@color/colorBottomNavBar"
     />
     <padding
-            android:left="6dp"
+            android:left="7dp"
             android:top="6dp"
-            android:right="6dp"
+            android:right="7dp"
             android:bottom="6dp"
     />
     <stroke

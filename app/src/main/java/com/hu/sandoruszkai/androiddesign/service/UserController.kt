@@ -9,7 +9,7 @@ class UserController{
 
     private val BASE_URL = "http://randomuser.me/"
 
-    val compositeDisposable = CompositeDisposable()
+    private val compositeDisposable = CompositeDisposable()
 
     fun getUsers(handler: HandleResponse<UserWrapper>) {
 
