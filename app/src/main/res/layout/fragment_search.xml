@@ -24,7 +24,9 @@
                     android:layout_height="34dp"
                     android:background="@drawable/search_view_background"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center" >
 
                 <LinearLayout
                         android:layout_width="wrap_content"
@@ -35,7 +37,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_search_small"
-
                             android:layout_marginEnd="3dp"/>
 
                     <TextView
@@ -173,12 +174,43 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|top">
+
+            <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+                    android:id="@+id/header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackgroundSmoke">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/developers"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/lucida_console"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="7dp"
+                />
+            </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewGrid"
                     android:background="@color/colorBackgroundSmoke"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:padding="8dp"
                     tools:listitem="@layout/item_user"/>
+
+
+
+        </LinearLayout>
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

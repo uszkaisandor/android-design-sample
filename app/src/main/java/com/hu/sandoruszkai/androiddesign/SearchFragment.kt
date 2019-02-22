@@ -21,9 +21,9 @@ class SearchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setRecyclerViewGridAdapter()
         getUsers()
-
+        setRecyclerViewGridAdapter()
+        header.attachTo(recyclerViewGrid)
     }
 
     private fun setRecyclerViewGridAdapter() {
