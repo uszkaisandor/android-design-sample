@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_profile.*
 
-
 class ProfileActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
@@ -19,17 +18,17 @@ class ProfileActivity : AppCompatActivity() {
         window.statusBarColor = Color.TRANSPARENT
         hideDefaultNavBar()
         setNavBarListeners()
-        setFragment(ProfileFragment())
+        setFragment(ProfileFragment(), "PROFILE_FRAGMENT")
     }
 
     private fun setNavBarListeners() {
         navbarBottom.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.action_search -> {
-                    setFragment(SearchFragment())
+                    setFragment(SearchFragment(), "SEARCH_FRAGMENT")
                 }
                 R.id.action_home -> {
-                    setFragment(ProfileFragment())
+                    setFragment(ProfileFragment(), "PROFILE_FRAGMENT")
                 }
             }
             return@setOnNavigationItemSelectedListener true
@@ -46,9 +45,10 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun setFragment(fragment: Fragment) {
+    private fun setFragment(fragment: Fragment, tag: String) {
         val ft = supportFragmentManager.beginTransaction()
-        ft.replace(R.id.frameFragmentHolder, fragment)
+        ft.replace(R.id.frameFragmentHolder, fragment, tag)
+        ft.addToBackStack(null)
         ft.commit()
     }
 

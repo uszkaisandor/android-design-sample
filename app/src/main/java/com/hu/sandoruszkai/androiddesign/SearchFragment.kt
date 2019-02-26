@@ -50,7 +50,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun crossfade() {
-        val animationTime = 500L
+        val animationTime = 1000L
 
         recyclerViewGrid.apply {
             animate()

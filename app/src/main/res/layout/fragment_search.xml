@@ -208,7 +208,7 @@
                     android:id="@+id/recyclerViewGrid"
                     android:background="@color/colorBackgroundSmoke"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="500dp"
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp"
                     android:visibility="gone"
