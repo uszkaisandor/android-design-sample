@@ -11,5 +11,6 @@
     <color name="colorButtonCreateAccountPushed">#3295989A</color>
     <color name="colorBackgroundSmoke">#E629332F</color>
     <color name="colorBottomNavBar">#1C211F</color>
+    <color name="colorTransparent">#00000000</color>
 
 </resources>

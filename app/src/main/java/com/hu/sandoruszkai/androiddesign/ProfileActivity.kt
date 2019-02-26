@@ -1,16 +1,22 @@
 package com.hu.sandoruszkai.androiddesign
 
+import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_profile.*
 
 
 class ProfileActivity : AppCompatActivity() {
+
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+        window.statusBarColor = Color.TRANSPARENT
         hideDefaultNavBar()
         setNavBarListeners()
         setFragment(ProfileFragment())

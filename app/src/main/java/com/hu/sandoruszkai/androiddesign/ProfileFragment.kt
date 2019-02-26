@@ -14,10 +14,11 @@ class ProfileFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        //super.onViewCreated(view, savedInstanceState)
         viewPager?.let {
             val adapter = ViewPagerAdapter(childFragmentManager, requireActivity())
             viewPager.adapter = adapter
         }
+        viewPagerIndicator.setViewPager(viewPager)
     }
 }

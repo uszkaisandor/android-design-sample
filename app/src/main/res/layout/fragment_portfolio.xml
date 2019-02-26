@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:background="@color/colorBackgroundSmoke">
 
+
     <Button
             android:id="@+id/btnHire2"
             android:layout_width="match_parent"
@@ -31,7 +32,10 @@
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="17dp">
+                android:paddingTop="15dp"
+                android:paddingStart="17dp"
+                android:paddingBottom="15dp"
+                android:paddingEnd="17dp">
 
             <ImageView
                     android:id="@+id/ivIconCoffee"
@@ -99,7 +103,7 @@
                     app:layout_constraintTop_toBottomOf="@id/ivIconCoffee"
                     android:src="@drawable/image_screen_1"
                     app:layout_constraintWidth_percent="0.3"
-                    app:layout_constraintHeight_percent="0.57"
+                    app:layout_constraintHeight_percent="0.55"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintHorizontal_chainStyle="spread_inside"/>
 
@@ -163,7 +167,7 @@
                     android:id="@+id/tvAppDetails2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:fontFamily="@font/rockwell_bold"
                     android:textColor="@color/colorWhite"
                     android:text="@string/connecting_you_with_hand_selected_software_developers"

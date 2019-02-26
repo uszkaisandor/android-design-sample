@@ -12,6 +12,7 @@ class ViewPagerAdapter internal constructor(fm: FragmentManager, private val con
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
+            // TODO: Meglévő fragmentet kell megnyitni, nem újat
             0 -> PortfolioFragment()
             else -> AboutFragment()
         }
