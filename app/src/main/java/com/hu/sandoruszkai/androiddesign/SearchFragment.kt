@@ -1,5 +1,7 @@
 package com.hu.sandoruszkai.androiddesign
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,7 +24,7 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         getUsers()
         setRecyclerViewGridAdapter()
-        header.attachTo(recyclerViewGrid)
+        recyclerViewHeader.attachTo(recyclerViewGrid)
     }
 
     private fun setRecyclerViewGridAdapter() {
@@ -38,13 +40,36 @@ class SearchFragment : Fragment() {
                     (recyclerViewGrid?.adapter as UserAdapter).setDataSet(response.users)
                     recyclerViewGrid?.adapter?.notifyDataSetChanged()
                 }
+                crossfade()
             }
-
             override fun onError(error: Throwable) {
                 error.printStackTrace()
                 Toast.makeText(requireActivity(), getString(R.string.error), Toast.LENGTH_LONG).show()
             }
         })
+    }
+
+    private fun crossfade() {
+        val animationTime = 500L
+
+        recyclerViewGrid.apply {
+            animate()
+                .alpha(1f)
+                .setDuration(animationTime)
+                .setListener(object : AnimatorListenerAdapter() {
+                    override fun onAnimationEnd(animation: Animator) {
+                        recyclerViewGrid?.visibility = View.VISIBLE
+                    }
+                })
+        }
+        progressBarCircular.animate()
+            .alpha(0f)
+            .setDuration(animationTime)
+            .setListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationEnd(animation: Animator) {
+                    progressBarCircular?.visibility = View.GONE
+                }
+            })
     }
 
 }

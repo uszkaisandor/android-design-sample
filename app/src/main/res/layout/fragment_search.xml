@@ -26,7 +26,7 @@
                     android:orientation="horizontal"
                     android:clickable="true"
                     android:focusable="true"
-                    android:gravity="center" >
+                    android:gravity="center">
 
                 <LinearLayout
                         android:layout_width="wrap_content"
@@ -174,14 +174,12 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center_horizontal|top">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
 
             <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
-                    android:id="@+id/header"
+                    android:id="@+id/recyclerViewHeader"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -191,13 +189,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/developers"
-                        android:textSize="14sp"
+                        android:textSize="15sp"
                         android:textColor="@color/colorWhite"
                         android:fontFamily="@font/lucida_console"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="7dp"
                 />
             </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+            <ProgressBar
+                    android:id="@+id/progressBarCircular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
 
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewGrid"
@@ -206,9 +211,9 @@
                     android:layout_height="match_parent"
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp"
+                    android:visibility="gone"
+                    android:alpha="0"
                     tools:listitem="@layout/item_user"/>
-
-
 
         </LinearLayout>
 
